@@ -65,4 +65,19 @@ function NumPrimo (num){
         else return true;
     }
 }
-console.log(NumPrimo(9));
+//console.log(NumPrimo(9));
+
+//E7
+function CincoNumPrimos(){
+    const PrimerosPrimos = [];
+    let CandidatoAPrimo = 2;
+    
+    while (PrimerosPrimos.length < 5){
+        if(NumPrimo(CandidatoAPrimo)){
+            PrimerosPrimos.push(CandidatoAPrimo);
+        }
+        CandidatoAPrimo++;
+    }
+    return PrimerosPrimos;
+}
+console.log (CincoNumPrimos(10,3,5,7,9,120));
